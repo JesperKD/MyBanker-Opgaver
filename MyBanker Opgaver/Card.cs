@@ -136,7 +136,7 @@ namespace MyBanker_Opgaver
         }
 
         /// <summary>
-        /// overrides the ToString() Function for Card objects
+        /// overriden ToString() Function for Card objects
         /// </summary>
         /// <returns></returns>
         public override string ToString()
