@@ -28,6 +28,10 @@ namespace MyBanker_Opgaver
             expirydate = GenerateDate();
         }
 
+        /// <summary>
+        /// Returns a Maestro specific Expirydate
+        /// </summary>
+        /// <returns></returns>
         public override string GenerateDate()
         {
             DateTime today = DateTime.Today;

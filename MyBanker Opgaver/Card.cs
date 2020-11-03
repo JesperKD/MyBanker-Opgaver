@@ -69,6 +69,10 @@ namespace MyBanker_Opgaver
             set { ExpiryDate = value; }
         }
 
+        /// <summary>
+        /// Returns a randomly generated 14 character Account number
+        /// </summary>
+        /// <returns></returns>
         public virtual string GenerateAccountNum()
         {
             Random random = new Random();
@@ -86,6 +90,10 @@ namespace MyBanker_Opgaver
             return result;
         }
 
+        /// <summary>
+        /// Returns a randomly generated 16 character long Card Number
+        /// </summary>
+        /// <returns></returns>
         public virtual string GenerateCardNum()
         {
             Random random = new Random();
@@ -112,6 +120,10 @@ namespace MyBanker_Opgaver
             return result;
         }
 
+        /// <summary>
+        /// Returns a card Expirydate as a string
+        /// </summary>
+        /// <returns></returns>
         public virtual string GenerateDate()
         {
             DateTime today = DateTime.Today;
@@ -123,6 +135,14 @@ namespace MyBanker_Opgaver
             return result[0];
         }
 
+        /// <summary>
+        /// overrides the ToString() Function for Card objects
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"Cardtype: {cardtype} \nName: {name} \nAccount Number: {accountnum} \nCard Number: {cardnum} \nExpiration Date: {expirydate}";
+        }
     }
     
 }

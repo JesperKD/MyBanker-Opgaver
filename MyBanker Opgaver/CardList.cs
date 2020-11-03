@@ -8,6 +8,10 @@ namespace MyBanker_Opgaver
 {
     public static class CardList
     {
+        /// <summary>
+        /// Instansiates cards and return them as a List
+        /// </summary>
+        /// <returns></returns>
         public static List<Card> CreateListofCards()
         {
             Card debitcard = new DebitCard();
