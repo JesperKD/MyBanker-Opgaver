@@ -17,6 +17,8 @@ namespace MyBanker_Opgaver
 
             prefixList = temp;
 
+//Du burde lade superklassen tage sig af dette   
+//Se evt https://www.tutorialspoint.com/design_pattern/template_pattern.htm
             cardnum = GenerateCardNum();
             accountnum = GenerateAccountNum();
             expirydate = GenerateDate();
